@@ -156,3 +156,48 @@ var result = split.join("\n")
 console.log(result);
 
 //  Qno 18
+
+var string = 'The quick brown fox jumps over the lazy dog'
+
+var string= string.toLowerCase()
+
+var split = string.split(" ")
+ var total = 0
+for (var i = 0; i<split.length;i++){
+  if (split[i] ==="the"){
+    total++
+  }
+
+  
+}
+console.log(" There are " +  total + "  occurences(s) of word 'the' ");
+
+// Qno 15 
+
+var password = prompt("Enter password")
+var letter = false
+var num = false
+
+for(var i= 0; i<password.length;i++){
+
+  var char = password[i]
+  if( (char>="a" && char<="z" ) || (char>="A" && char<="Z")){
+    letter=true
+  }
+  if (char>="0" && char<="9"
+  ){
+    num= true
+  }
+}
+var firstchar = password[0]
+ var start =  (firstchar >= "0" && firstchar <= "9")
+
+  
+if(
+  password.length>=6 && letter && num && !start){
+
+console.log("password is valid");
+
+  }
+  else {console.log("password is not valid");}
+  
